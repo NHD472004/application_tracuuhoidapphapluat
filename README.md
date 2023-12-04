@@ -1,26 +1,26 @@
 ### Ứng dụng hỗ trợ tra cứu, hỏi đáp tri thức pháp luật
   Xây dựng ứng dụng hỗ trợ người dùng tra cứu, hỏi đáp tri thức pháp luật dựa trên nguồn dữ liệu được khai thác từ Bộ Pháp điển Việt Nam và CSDL văn bản QPPL. 
 ### Thành  viên thực hiện
- Tên trường: Trường Đại học Mở Hà Nội
+ Tên trường: Trường Đại học Mở Hà Nội<br>
  Thành viên thực hiện đề tài:
-  . Nguyễn Đình Dũng
-  . Nguyễn Hải Đăng
-  . Hoàng Minh Hiếu
+  <li>Nguyễn Đình Dũng</li>
+  <li>Nguyễn Hải Đăng</li>
+  <li>Hoàng Minh Hiếu</li>
 ### Chi tiết ý tưởng
- . Sử dụng các phần mềm Python, Rasa, MongoDB để build môi trường phát triển.
- . Thiết lập một số thông tin: Chủ đề, chỉ mục.
- . Hỗ trợ tra cứu, xem các nội dung văn bản QPPL đang có hiệu lực theo trật tự sắp xếp về chủ đề, đề mục, chỉ mục và các điều giống như Bộ Pháp điển Việt Nam. Cho phép người dùng thực hiện phản hồi lại thông tin về mức độ chính xác của các gợi ý sắp xếp để phần mềm có thể ghi nhớ và đưa ra các cải tiến về sắp xếp phù hợp hơn cho các lần tiếp theo.
- . Phần mềm tự động trích rút các thuật ngữ, từ ngữ được định nghĩa và sử dụng trong các văn bản QPPL.
- . Cho phép người dùng tìm kiếm nhanh để xem các nội dung văn bản QPPL liên quan theo các gợi ý về từng nhóm vấn đề và từ khóa chính hay được sử dụng trong hệ thống tri thức pháp luật của Việt Nam.
- . Hỗ trợ trả lời các câu hỏi của người dùng về pháp luật dựa trên việc trích rút tri thức từ các văn bản QPPL hiện đang có hiệu lực.
+ <li>Sử dụng các phần mềm Python, Rasa, MongoDB để build môi trường phát triển.</li>
+ <li>Thiết lập một số thông tin: Chủ đề, chỉ mục.<li>
+ <li>Hỗ trợ tra cứu, xem các nội dung văn bản QPPL đang có hiệu lực theo trật tự sắp xếp về chủ đề, đề mục, chỉ mục và các điều giống như Bộ Pháp điển Việt Nam. Cho phép người dùng thực hiện phản hồi lại thông tin về mức độ chính xác của các gợi ý sắp xếp để phần mềm có thể ghi nhớ và đưa ra các cải tiến về sắp xếp phù hợp hơn cho các lần tiếp theo.</li>
+ <li>Phần mềm tự động trích rút các thuật ngữ, từ ngữ được định nghĩa và sử dụng trong các văn bản QPPL.</li>
+ <li>Cho phép người dùng tìm kiếm nhanh để xem các nội dung văn bản QPPL liên quan theo các gợi ý về từng nhóm vấn đề và từ khóa chính hay được sử dụng trong hệ thống tri thức pháp luật của Việt Nam.</li>
+ <li>Hỗ trợ trả lời các câu hỏi của người dùng về pháp luật dựa trên việc trích rút tri thức từ các văn bản QPPL hiện đang có hiệu lực.</li>
 ### Môi trường phát triển
- . Python
- . Rasa
- . MongoDB
- . Git/Github
+ <li>Python</li>
+ <li>Rasa</li>
+ <li>MongoDB</li>
+ <li>Git/Github</li>
 ### Thiết lập môi trường phát triển
  Đầu tiên ta clone project về
- $ git clone https://github.com/dinhdungne1/mi22ad.git
+ $ git clone git@github.com:NHD472004/application_tracuuhoidapphapluat.git
  Trước khi cài đặt môi trường ảo, chúng ta cần cài đặt các chức năng bổ sung:
  $ sudo apt install python3.11-full
  Mở project vừa clone về, sau đó cài đặt môi trường ảo:
