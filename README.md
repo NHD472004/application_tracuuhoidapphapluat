@@ -30,24 +30,38 @@
 
 ### Thiết lập môi trường phát triển
  Đầu tiên ta clone project về<br>
- $ git clone git@github.com:NHD472004/application_tracuuhoidapphapluat.git<br>
+ ```
+ $ git clone git@github.com:NHD472004/application_tracuuhoidapphapluat.git
+ ```
  Trước khi cài đặt môi trường ảo, chúng ta cần cài đặt các chức năng bổ sung:<br>
- $ sudo apt install python3.11-full<br>
+ ```
+ $ sudo apt install python3.11-full
+ ```
  Mở project vừa clone về, sau đó cài đặt môi trường ảo:<br>
- $ python3 -m venv env<br>
- $ source env/bin/activate<br>
+ ```
+ $ python3 -m venv env
+ $ source env/bin/activate
+ ```
  Cài đặt các thư viện,framework cho project:<br>
   Framework: FastAPI<br>
- $ pip3 install fastapi<br>
- $ pip3 install uvicorn<br>
+ ```
+ $ pip3 install fastapi
+ $ pip3 install uvicorn
+ ```
   Framework: Rasa<br>
- $ pip3 install rasa<br>
-  nếu bị lỗi: "MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0." thì cài thêm:<br>
- $ pip3 install sqlalchemy==1.4.0<br>
+ ```
+  $ pip3 install rasa
+ ```
+  Nếu bị lỗi: "MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0." thì cài thêm:<br>
+ ```
+ $ pip3 install sqlalchemy==1.4.0
+ ```
   Kết nối python với CSDL MongoDB, dùng thư viện pymongo<br>
- $ pip3 install "pymongo[srv]"<br>
+ ```
+ $ pip3 install "pymongo[srv]"
+ ```
 
 ### Hướng dẫn sử dụng
- Xem hướng dẫn sử dụng tại Hướng dẫn sử dụng
+ Xem hướng dẫn sử dụng tại <a href="https://github.com/NHD472004/application_tracuuhoidapphapluat">Hướng dẫn sử dụng</a>
 ### LICENSE
  See <a href="https://github.com/NHD472004/application_tracuuhoidapphapluat/blob/main/LICENSE">LICENSE</a> file for more information.
