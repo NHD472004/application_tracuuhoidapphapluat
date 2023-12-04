@@ -1,0 +1,185 @@
+version: "3.1"
+
+stories:
+
+- story: ask path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: an ninh quoc gia
+  steps:
+  - intent: ask_an_ninh_quoc_gia
+  - action: act_an_ninh_quoc_gia
+
+- story: bao hiem
+  steps:
+  - intent: ask_bao_hiem
+  - action: act_bao_hiem
+
+- story: buu chinh vien thong
+  steps:
+  - intent: ask_buu_chinh_vien_thong
+  - action: act_buu_chinh_vien_thong
+
+- story: bo tro tu phap
+  steps:
+  - intent: ask_bo_tro_tu_phap
+  - action: act_bo_tro_tu_phap
+
+- story: can bo cong chuc vien chuc
+  steps:
+  - intent: ask_canBo_congChuc_vienChuc
+  - action: act_canBo_congChuc_vienChuc
+
+- story: chinh sach xa hoi
+  steps:
+  - intent: ask_chinh_sach_xa_hoi
+  - action: act_chinh_sach_xa_hoi
+
+- story: cong nghiep
+  steps:
+  - intent: ask_cong_nghiep
+  - action: act_cong_nghiep
+
+- story: gia dinh tre em binh dang gioi
+  steps:
+  - intent: ask_giaDinh_treEm_binhDangGioi
+  - action: act_giaDinh_treEm_binhDangGioi
+
+- story: dan su
+  steps:
+  - intent: ask_dan_su
+  - action: act_dan_su
+
+- story: dan toc
+  steps:
+  - intent: ask_dan_toc
+  - action: act_dan_toc
+
+- story: dat dai
+  steps:
+  - intent: ask_dat_dai
+  - action: act_dat_dai
+
+- story: danh nghiep hop tac xa
+  steps:
+  - intent: ask_doanhNghiep_hopTacXa
+  - action: act_doanhNghiep_hopTacXa
+
+- story: giao duc dao tao
+  steps:
+  - intent: ask_giaoDuc_daoTao
+  - action: act_giaoDuc_daoTao
+
+- story: giao thong van tai
+  steps:
+  - intent: ask_giao_thong_van_tai
+  - action: act_giao_thong_van_tai
+
+- story: hanh chinh tu phap
+  steps:
+  - intent: ask_hanh_chinh_tu_phap
+  - action: act_hanh_chinh_tu_phap
+
+- story: hinh su
+  steps:
+  - intent: ask_hinh_su
+  - action: act_hinh_su
+
+- story: ke toan kiem toan
+  steps:
+  - intent: ask_ke_toan_kiem_toan
+  - action: act_ke_toan_kiem_toan
+
+- story: khieu nai to cao
+  steps:
+  - intent: ask_khieu_nai_to_cao
+  - action: act_khieu_nai_to_cao
+
+- story: khoa hoc cong nghe
+  steps:
+  - intent: ask_khoa_hoc_cong_nghe
+  - action: act_khoa_hoc_cong_nghe
+
+- story: lao dong
+  steps:
+  - intent: ask_lao_dong
+  - action: act_lao_dong
+
+- story: moi truong
+  steps:
+  - intent: ask_moi_truong
+  - action: act_moi_truong
+
+- story: ngan hang tien te
+  steps:
+  - intent: ask_ngan_hang_tien_te
+  - action: act_ngan_hang_tien_te
+
+- story: ngoai giao
+  steps:
+  - intent: ask_ngoai_giao
+  - action: act_ngoai_giao
+
+- story: nong thon
+  steps:
+  - intent: ask_nong_thon
+  - action: act_nong_thon
+
+- story: quoc phong
+  steps:
+  - intent: ask_quoc_phong
+  - action: act_quoc_phong
+
+- story: tai chinh
+  steps:
+  - intent: ask_tai_chinh
+  - action: act_tai_chinh
+
+- story: tai nguyen
+  steps:
+  - intent: ask_tai_nguyen
+  - action: act_tai_nguyen
+
+- story: thi hanh an
+  steps:
+  - intent: ask_thi_hanh_an
+  - action: act_thi_hanh_an
+
+- story: thong ke 
+  steps:
+  - intent: ask_thong_ke
+  - action: act_thong_ke
+
+- story: thue
+  steps:
+  - intent: ask_thue
+  - action: act_thue
+
+- story: ton giao
+  steps:
+  - intent: ask_ton_giao
+  - action: act_ton_giao
+
+- story: trat tu an toan xa hoi
+  steps:
+  - intent: ask_trat_tu_an_toan_xa_hoi
+  - action: act_trat_tu_an_toan_xa_hoi
+
+- story: van hoa the thao du lich
+  steps:
+  - intent: ask_vanHoa_theThao_duLich
+  - action: act_vanHoa_theThao_duLich
+
+- story: xay dung nha o do thi
+  steps:
+  - intent: ask_xayDung_nhaO_doThi
+  - action: act_xayDung_nhaO_doThi
+
+- story: y te
+  steps:
+  - intent: ask_y_te
+  - action: act_y_te

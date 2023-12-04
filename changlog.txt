@@ -1,0 +1,11 @@
+Change Log: Ứng dụng hỗ trợ tra cứu, hỏi đáp tri thức pháp luật
+Ứng dụng hỗ trợ tra cứu, hỏi đáp tri thức pháp luật:v1.0.00
+- Thêm chức năng hỗ trợ tra cứu, xem các nội dung văn bản QPPL đang có hiệu lực
+- Thêm chức năng tìm kiếm các nội dung văn bản QPPL
+- Tối ưu hóa phân mềm
+- Sửa một vài lỗi
+
+Ứng dụng hỗ trợ tra cứu, hỏi đáp tri thức pháp luật:v1.0.01
+- Sửa một vài lỗi
+
+Ứng dụng hỗ trợ tra cứu, hỏi đáp tri thức pháp luật master: https://github.com/dinhdung

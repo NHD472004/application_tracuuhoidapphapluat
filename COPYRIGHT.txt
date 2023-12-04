@@ -1,0 +1,2 @@
+All RASA code is Copyright by the original authors. See: https://github.com/RasaHQ/rasa
+

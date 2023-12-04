@@ -1,0 +1,506 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - chào
+    - xin chào
+    - chào bạn
+
+- intent: goodbye
+  examples: |
+    - bai bai
+    - gút bai
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - ok
+    - đúng
+    - đúng rồi
+    - yeah
+
+- intent: deny
+  examples: |
+    - no
+    - không
+    - không phải
+    - chịu
+
+- intent: bot_challenge
+  examples: |
+    - mày là ai
+    - bạn là ai
+    - ai
+    - bạn tên gì
+    - mày tên gì
+    - ai đấy
+    - ai đang hỗ trợ đó
+
+- intent: ask_an_ninh_quoc_gia
+  examples: |
+    - tình hình an ninh quốc gia hiện nay như thế nào
+    - các biện pháp bảo vệ an ninh quốc gia nào được áp dụng
+    - lệnh truy nã là gì
+    - Có những đối tượng nào đang được theo dõi trong lĩnh vực an ninh quốc gia
+    - Tình hình biên giới hiện nay ra sao
+    - Lệnh truy nã mới nhất là về ai
+    - Lực lượng quân sự đang triển khai ở đâu để bảo vệ an ninh quốc gia
+    - Có những vấn đề nào đang đặt ra thách thức cho an ninh quốc gia
+    - Các biện pháp nào đang được thực hiện để đảm bảo an ninh trong thời gian sự kiện lớn
+
+- intent: ask_bao_hiem
+  examples: |
+    - tôi muốn tìm hiểu về bảo hiểm nhân thọ
+    - Làm thế nào để đăng ký bảo hiểm y tế
+    - Có những loại bảo hiểm xe nào phổ biến
+    - Tính năng quan trọng nào của bảo hiểm nhân thọ tôi nên biết
+    - Làm thế nào để đền bù khi có tai nạn xe cộ
+    - Tính năng bảo hiểm y tế nào bảo vệ tốt nhất cho gia đình
+    - Có những quy định nào về bảo hiểm nhân thọ cho người cao tuổi
+    - Làm thế nào để đăng ký bảo hiểm ô tô trực tuyến
+    - Tôi cần biết về quy định bảo hiểm y tế khi đi du lịch nước ngoài
+    - Gói bảo hiểm nào phù hợp cho người kinh doanh
+
+- intent: ask_buu_chinh_vien_thong
+  examples: |
+    - Làm thế nào để gửi bưu phẩm quốc tế
+    - Có những loại dịch vụ viễn thông nào được cung cấp
+    - Tôi cần thông tin về cách đăng ký một dịch vụ Internet mới
+    - Làm thế nào để theo dõi gói hàng đã gửi đi
+    - Tính năng nổi bật của dịch vụ bưu chính trong nước là gì
+    - Làm thế nào để đổi địa chỉ nhận bưu kiện đã đăng ký trước đó
+    - Có các gói Internet nào dành cho doanh nghiệp
+    - Làm thế nào để nạp tiền vào tài khoản di động của tôi
+    - Tôi muốn biết về các chương trình khuyến mãi của nhà mạng
+    - Cách thức thanh toán hóa đơn viễn thông là gì
+
+- intent: ask_bo_tro_tu_phap
+  examples: |
+    - Làm thế nào để tìm một luật sư chuyên nghiệp
+    - Cần phải làm gì khi có một vấn đề pháp lý
+    - Tôi đang cần hỗ trợ pháp lý, bạn có thể giúp đỡ tôi không
+    - Cách thức để đặt một cuộc hẹn với một luật sư là gì
+    - Làm thế nào để kiểm tra tính hợp lệ của một văn bản pháp lý
+    - Có các tổ chức nào cung cấp dịch vụ tư vấn pháp lý miễn phí không
+    - Tôi cần biết về quy trình giải quyết tranh chấp thông qua pháp lý
+    - Có những nguồn thông tin nào về các luật lệ và quy định mới nhất
+    - Làm thế nào để nộp đơn ly hôn và làm thủ tục liên quan
+    - Tôi muốn biết về quyền và nghĩa vụ của mình trong một thỏa thuận hợp đồng
+
+- intent: ask_canBo_congChuc_vienChuc
+  examples: |
+    - Quy trình tuyển dụng cán bộ như thế nào
+    - Có những điều kiện nào để trở thành một viên chức công quan
+    - Làm thế nào để nộp hồ sơ xin việc trong hệ thống nhà nước
+    - Tôi muốn biết về chính sách thăng tiến nghề nghiệp cho cán bộ
+    - Có quy định gì về quyền lợi và nghĩa vụ của cán bộ công chức không
+    - Làm thế nào để đăng ký thi vào công chức
+    - Tính năng quan trọng nào của hệ thống đánh giá công chức tôi cần biết
+    - Có các chương trình đào tạo nghề nghiệp cho viên chức không
+    - Quy trình xử lý khiếu nại về hành vi của cán bộ công chức là gì
+    - Làm thế nào để theo dõi thông tin về các vị trí việc làm mới trong hệ thống nhà nước
+
+- intent: ask_chinh_sach_xa_hoi
+  examples: |
+    - Có những chính sách xã hội nào đang được thực hiện
+    - Làm thế nào để đăng ký tham gia bảo hiểm xã hội
+    - Tính năng quan trọng nào của chính sách y tế cần biết
+    - Có những hỗ trợ nào dành cho người cao tuổi trong chính sách xã hội
+    - Quy định về chính sách giáo dục đối với học sinh có hoàn cảnh khó khăn là gì
+    - Làm thế nào để xin hỗ trợ tài chính từ chính sách xã hội
+    - Có chính sách nào hỗ trợ người khuyết tật
+    - Tôi muốn biết về các chính sách hỗ trợ việc làm cho người thất nghiệp
+    - Làm thế nào để kiểm tra quyền lợi và nghĩa vụ của tôi trong chính sách xã hội
+    - Có những chính sách mới nào được thông báo gần đây
+
+- intent: ask_cong_nghiep
+  examples: |
+    - Làm thế nào để đăng ký kinh doanh trong lĩnh vực công nghiệp
+    - Có những chính sách hỗ trợ cho doanh nghiệp sản xuất không
+    - Tôi muốn biết về quy trình xin giấy phép sản xuất hàng hóa
+    - Có những nguồn vốn nào dành cho các dự án công nghiệp mới
+    - Tính năng quan trọng nào của các khu công nghiệp tôi cần biết
+    - Có những chính sách hỗ trợ năng lượng tái tạo không
+    - Làm thế nào để đánh giá môi trường cho một dự án công nghiệp
+    - Có những quy định nào về an toàn lao động trong ngành công nghiệp
+    - Tôi quan tâm đến các chương trình đào tạo nghề trong lĩnh vực công nghiệp
+    - Làm thế nào để đề xuất một dự án công nghiệp cho chính phủ
+
+- intent: ask_giaDinh_treEm_binhDangGioi
+  examples: |
+    - Có chính sách hỗ trợ gia đình đang có hiệu lực không
+    - Làm thế nào để đăng ký nhận trợ cấp gia đình cho trẻ em
+    - Tôi muốn biết về các chương trình chăm sóc trẻ em của chính phủ
+    - Có những chính sách nào về giáo dục mầm non
+    - Tính năng quan trọng nào của các dịch vụ hỗ trợ gia đình tôi nên biết
+    - Có những chương trình giúp đỡ phụ nữ trong lĩnh vực nghệ thuật không
+    - Làm thế nào để bảo vệ quyền lợi của trẻ em trong trường học
+    - Có các khóa đào tạo nào về quyền lợi và bình đẳng giới
+    - Tôi cần biết về các chính sách hỗ trợ phụ nữ làm việc
+    - Có các chương trình giáo dục nghề nghiệp dành cho phụ nữ không
+    - Làm thế nào để đăng ký nhận trợ cấp thai sản từ chính phủ
+    - Có chương trình nào hỗ trợ gia đình đối diện với khó khăn kinh tế không
+    - Tính năng quan trọng nào của chính sách bảo vệ trẻ em tôi cần biết
+    - Làm thế nào để đề xuất một dự án nâng cao tình hình bình đẳng giới
+    - Có quy định nào về nghỉ phép làm việc để chăm sóc con nhỏ
+    - Tôi muốn biết về các chương trình hỗ trợ tạo việc làm cho người có trách nhiệm gia đình
+    - Có các chương trình giáo dục cho phụ nữ trẻ không
+    - Làm thế nào để bảo vệ quyền lợi của người làm việc có trẻ em
+    - Có chương trình hỗ trợ tâm lý cho gia đình không
+    - Tôi cần thông tin về cơ hội nghệ thuật và văn hóa cho trẻ em
+
+- intent: ask_dan_su
+  examples: |
+    - Làm thế nào để đăng ký hôn nhân tại địa phương của tôi
+    - Có những quy định gì về chia tài sản khi ly hôn
+    - Tôi muốn biết về quy trình đăng ký con nuôi
+    - Làm thế nào để nộp đơn ly hôn và làm thủ tục liên quan
+    - Có chương trình giáo dục nào về quyền và nghĩa vụ dân sự không
+    - Có những biện pháp nào để giải quyết tranh chấp dân sự
+    - Làm thế nào để đăng ký quyền sử dụng đất đai
+    - Tôi muốn biết về các quy định về hợp đồng mua bán nhà đất
+    - Có các dịch vụ hỗ trợ pháp lý dành cho công dân không
+    - Làm thế nào để thay đổi thông tin cá nhân trên hộ chiếu
+
+- intent: ask_dan_toc
+  examples: |
+    - Có những chính sách hỗ trợ cho cộng đồng dân tộc đang có hiệu lực không
+    - Tôi muốn biết về các sự kiện văn hóa của cộng đồng dân tộc
+    - Làm thế nào để tham gia các chương trình giáo dục về lịch sử và văn hóa dân tộc
+    - Có những nguồn tài trợ nào dành cho doanh nghiệp của cộng đồng dân tộc
+    - Tính năng quan trọng nào của chính sách bảo vệ quyền lợi dân tộc tôi cần biết
+    - Làm thế nào để đề xuất một dự án xây dựng cộng đồng dân tộc
+    - Có chương trình nào hỗ trợ nghệ sĩ và nghệ nhân trong cộng đồng dân tộc không
+    - Tôi muốn biết về các sự kiện kỷ niệm và lễ hội của dân tộc tôi
+    - Làm thế nào để bảo vệ và duy trì ngôn ngữ và văn hóa truyền thống của cộng đồng dân tộc
+    - Có các chương trình hỗ trợ nghệ thuật và văn hóa dành cho thanh niên dân tộc không
+
+- intent: ask_dat_dai
+  examples: |
+    - Làm thế nào để kiểm tra quy hoạch sử dụng đất đai tại khu vực của tôi
+    - Có những quy định gì về chuyển nhượng đất đai
+    - Tôi muốn biết về quy trình xin cấp giấy chứng nhận quyền sử dụng đất
+    - Làm thế nào để kiểm tra thông tin quyền sử dụng đất của một khu đất cụ thể
+    - Có những chính sách hỗ trợ cho nông dân về đất đai không
+    - Tính năng quan trọng nào của chính sách quản lý đất đai cần biết
+    - Làm thế nào để đề xuất một dự án xây dựng trên một khu đất mới
+    - Có quy định nào về chia tách đất đai
+    - Tôi muốn biết về các dự án phát triển bất động sản trong khu vực của mình
+    - Làm thế nào để đăng ký chuyển đổi đất nông nghiệp thành đất ở
+
+- intent: ask_doanhNghiep_hopTacXa
+  examples: |
+    - Làm thế nào để đăng ký doanh nghiệp mới
+    - Có chính sách hỗ trợ tài chính cho doanh nghiệp mới không
+    - Tôi muốn biết về các chương trình hỗ trợ hợp tác xã
+    - Làm thế nào để kiểm tra tính hợp lệ của một doanh nghiệp
+    - Có những nguồn tài trợ nào dành cho doanh nghiệp xã hội
+    - Tính năng quan trọng nào của chính sách thuế dành cho doanh nghiệp tôi cần biết
+    - Làm thế nào để đề xuất một dự án hợp tác xã
+    - Có quy định nào về thủ tục đóng, chấm dứt hoạt động doanh nghiệp không
+    - Tôi muốn biết về các chương trình đào tạo doanh nhân và quản lý doanh nghiệp
+    - Làm thế nào để tham gia các dự án nghiên cứu và phát triển cho doanh nghiệp
+
+- intent: ask_giaoDuc_daoTao
+  examples: |
+    - Làm thế nào để đăng ký vào một trường đại học
+    - Có những chương trình học online nào đang được cung cấp
+    - Tôi muốn biết về các học bổng hiện đang có sẵn
+    - Làm thế nào để đề xuất một khóa đào tạo mới cho cộng đồng
+    - Có chính sách hỗ trợ giáo viên đang có hiệu lực không
+    - Tính năng quan trọng nào của chính sách giáo dục cần biết
+    - Làm thế nào để tham gia các chương trình đào tạo nghề nghiệp
+    - Có các chương trình đổi mới giáo dục nào đang triển khai không
+    - Tôi muốn biết về các nguồn tài trợ cho các dự án giáo dục cộng đồng
+    - Làm thế nào để kiểm tra chất lượng của một trường hoặc khóa học
+
+- intent: ask_giao_thong_van_tai
+  examples: |
+    - Làm thế nào để kiểm tra tình trạng giao thông hiện tại
+    - Có những chính sách hỗ trợ cho việc sử dụng phương tiện công cộng không
+    - Tôi muốn biết về các kế hoạch cải thiện giao thông đô thị
+    - Làm thế nào để đề xuất một dự án hạ tầng giao thông mới
+    - Có những chương trình khuyến mãi nào cho việc sử dụng xe điện không
+    - Tính năng quan trọng nào của chính sách an toàn giao thông cần biết
+    - Làm thế nào để kiểm tra lịch trình và các tuyến giao thông công cộng
+    - Có quy định nào về việc đăng ký và kiểm tra an toàn cho xe cá nhân không
+    - Tôi muốn biết về các dự án xây dựng đường cao tốc mới
+    - Làm thế nào để đăng ký thẻ giao thông công cộng
+
+- intent: ask_hanh_chinh_tu_phap
+  examples: |
+    - Làm thế nào để đặt lịch hẹn tại cơ quan hành chính
+    - Có những biểu mẫu nào cần điền khi thực hiện thủ tục hành chính
+    - Tôi muốn biết về các quy trình khiếu nại về hành vi hành chính
+    - Làm thế nào để kiểm tra tình trạng xử lý hồ sơ hành chính của tôi
+    - Có chính sách nào hỗ trợ người dân trong các vấn đề hành chính không
+    - Tính năng quan trọng nào của chính sách bảo vệ quyền lợi người dân trong hành chính tư pháp
+    - Làm thế nào để tham gia đánh giá chất lượng dịch vụ hành chính
+    - Có quy định nào về thời hạn giải quyết hồ sơ hành chính không
+    - Tôi muốn biết về các chương trình đào tạo cho cán bộ hành chính tư pháp
+    - Làm thế nào để nộp đơn yêu cầu thông tin từ cơ quan hành chính
+
+- intent: ask_hinh_su
+  examples: |
+    - Làm thế nào để báo cáo một vụ án hình sự cho cơ quan chức năng
+    - Có những quy định nào về quyền lợi của nạn nhân trong vụ án hình sự
+    - Tôi muốn biết về quy trình tố tụng trong hình sự
+    - Làm thế nào để kiểm tra tình trạng xử lý một vụ án đang diễn ra
+    - Có chính sách hỗ trợ tâm lý cho nạn nhân của tội ác không
+    - Tính năng quan trọng nào của chính sách bảo vệ nhân chứng trong vụ án hình sự
+    - Làm thế nào để theo dõi thông tin về tội phạm và an ninh cộng đồng
+    - Có quy định nào về quản lý dữ liệu trong vụ án hình sự không
+    - Tôi muốn biết về các chương trình hỗ trợ hành viên công lý
+    - Làm thế nào để đề xuất một dự án cộng đồng để giảm tội phạm
+
+- intent: ask_ke_toan_kiem_toan
+  examples: |
+    - Làm thế nào để đăng ký dịch vụ kế toán cho doanh nghiệp của tôi
+    - Có những quy định nào về báo cáo tài chính cho doanh nghiệp
+    - Tôi muốn biết về các dịch vụ kiểm toán và đánh giá nội bộ
+    - Làm thế nào để đề xuất một dự án kiểm toán tài chính
+    - Có chính sách nào về thuế và hạch toán cho doanh nghiệp của tôi
+    - Tính năng quan trọng nào của chính sách kế toán cần biết
+    - Làm thế nào để kiểm tra tính hợp lệ của một công ty kế toán
+    - Có quy định nào về bảo mật thông tin trong quá trình kiểm toán không
+    - Tôi muốn biết về các chương trình đào tạo và cập nhật kiến thức cho kế toán viên
+    - Làm thế nào để theo dõi thay đổi về các quy định kế toán và kiểm toán
+
+- intent: ask_khieu_nai_to_cao
+  examples: |
+    - Làm thế nào để nộp một khiếu nại về hành vi phi pháp hoặc không đúng đắn
+    - Có quy trình nào để tố cáo hành vi gian lận hoặc tham nhũng không
+    - Tôi muốn biết cách đề xuất một khiếu nại liên quan đến môi trường
+    - Làm thế nào để bảo vệ quyền lợi của người lao động thông qua khiếu nại
+    - Có những chính sách bảo vệ nhân chứng khi tố cáo không đúng đắn không
+    - Tính năng quan trọng nào của chính sách khiếu nại cần biết
+    - Làm thế nào để theo dõi tiến trình xử lý khiếu nại của tôi
+    - Có quy định nào về bảo vệ người khiếu nại khỏi trả thù không
+    - Tôi muốn khiếu nại về chất lượng sản phẩm, làm thế nào tôi có thể làm điều này
+    - Làm thế nào để khiếu nại về dịch vụ của một cơ quan chính phủ
+
+- intent: ask_khoa_hoc_cong_nghe
+  examples: |
+    - Làm thế nào để theo dõi các tiến triển mới trong lĩnh vực khoa học công nghệ
+    - Có những chính sách hỗ trợ nghiên cứu và phát triển không
+    - Tôi muốn biết về các dự án nghiên cứu khoa học đang triển khai
+    - Làm thế nào để tham gia các sự kiện và hội nghị khoa học
+    - Có chính sách nào về đổi mới công nghệ và khởi nghiệp không
+    - Tính năng quan trọng nào của chính sách bảo vệ quyền sở hữu trí tuệ cần biết
+    - Làm thế nào để xin tài trợ cho một dự án nghiên cứu khoa học
+    - Có quy định nào về an toàn và đạo đức nghiên cứu không
+    - Tôi muốn biết về các chương trình đào tạo và học bổng trong lĩnh vực công nghệ
+    - Làm thế nào để theo dõi xu hướng và dự đoán phát triển trong ngành công nghiệp công nghệ
+
+- intent: ask_lao_dong
+  examples: |
+    - Làm thế nào để tìm kiếm việc làm phù hợp với kỹ năng của tôi
+    - Có những chương trình đào tạo nghề nghiệp nào đang được cung cấp
+    - Tôi muốn biết về quy định về giờ làm việc và nghỉ phép
+    - Làm thế nào để đề xuất một dự án phát triển nghề nghiệp cho cộng đồng
+    - Có chính sách nào về bảo vệ quyền lợi của người lao động không
+    - Tính năng quan trọng nào của chính sách bảo hiểm xã hội cần biết
+    - Làm thế nào để theo dõi thông tin về các sự kiện và hội thảo liên quan đến lao động
+    - Có quy định nào về an toàn và sức khỏe nghề nghiệp không
+    - Tôi muốn biết về các chương trình hỗ trợ tạo việc làm cho người khuyết tật
+    - Làm thế nào để xin nghỉ việc một cách hợp pháp
+
+- intent: ask_moi_truong
+  examples: |
+    - Làm thế nào để tham gia vào các hoạt động bảo vệ môi trường
+    - Có những chính sách nào về quản lý và bảo vệ tài nguyên tự nhiên không
+    - Tôi muốn biết về các dự án bảo vệ môi trường đang triển khai
+    - Làm thế nào để đề xuất một dự án cộng đồng nhằm cải thiện môi trường
+    - Có chương trình hỗ trợ nào cho doanh nghiệp thân thiện với môi trường không
+    - Tính năng quan trọng nào của chính sách bảo vệ môi trường cần biết
+    - Làm thế nào để kiểm tra chất lượng không khí và nước trong khu vực của tôi
+    - Có quy định nào về xử lý và tái chế rác thải không
+    - Tôi muốn biết về các chương trình giáo dục và tuyên truyền về bảo vệ môi trường
+    - Làm thế nào để tham gia vào các sự kiện và chiến dịch bảo vệ môi trường
+
+- intent: ask_ngan_hang_tien_te
+  examples: |
+    - Làm thế nào để mở tài khoản ngân hàng mới
+    - Có những chính sách lãi suất mới nhất không
+    - Tôi muốn biết về các sản phẩm và dịch vụ tài chính mà ngân hàng cung cấp
+    - Làm thế nào để đề xuất một dự án về tài chính hoặc đầu tư cho doanh nghiệp
+    - Có chương trình hỗ trợ tài chính nào dành cho sinh viên không
+    - Tính năng quan trọng nào của chính sách an toàn và bảo mật ngân hàng cần biết
+    - Làm thế nào để kiểm tra số dư tài khoản và giao dịch gần đây
+    - Có quy định nào về vay vốn và cho vay của ngân hàng không
+    - Tôi muốn biết về các chương trình tích điểm hoặc ưu đãi khách hàng của ngân hàng
+    - Làm thế nào để tham gia vào các chương trình đầu tư và giao dịch tiền tệ
+
+- intent: ask_ngoai_giao
+  examples: |
+    - Làm thế nào để xin visa cho một chuyến đi quốc tế
+    - Có những thông tin nào về các chính sách xuất nhập cảnh mới nhất không
+    - Tôi muốn biết về các sự kiện và hoạt động ngoại giao đang diễn ra
+    - Làm thế nào để đề xuất một dự án hợp tác quốc tế cho doanh nghiệp
+    - Có chính sách hỗ trợ người nước ngoài đang sống và làm việc tại đây không
+    - Tính năng quan trọng nào của chính sách bảo vệ công dân ở nước ngoài cần biết
+    - Làm thế nào để kiểm tra các cảnh báo du lịch và an toàn khi đi nước ngoài
+    - Có quy định nào về quyền lợi và nghĩa vụ của người nước ngoài khi làm việc tại đây không
+    - Tôi muốn biết về các chương trình hỗ trợ cho du học sinh và sinh viên quốc tế
+    - Làm thế nào để theo dõi các thông báo và cập nhật về quan hệ quốc tế
+
+- intent: ask_nong_thon
+  examples: |
+    - Làm thế nào để đăng ký tham gia chương trình hỗ trợ nông dân
+    - Có những chính sách hỗ trợ cho nông nghiệp bền vững không
+    - Tôi muốn biết về các dự án phát triển nông thôn đang triển khai
+    - Làm thế nào để đề xuất một dự án cộng đồng nhằm cải thiện điều kiện sống nông dân
+    - Có chính sách nào về an sinh xã hội cho người làm nông không
+    - Tính năng quan trọng nào của chính sách bảo vệ môi trường trong nông nghiệp cần biết
+    - Làm thế nào để kiểm tra thông tin về thời tiết và dự báo nông nghiệp
+    - Có quy định nào về giá cả và thị trường nông sản không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ kỹ thuật cho nông dân
+    - Làm thế nào để tham gia vào các chương trình khuyến khích hợp tác giữa nông dân
+
+- intent: ask_quoc_phong
+  examples: |
+    - Làm thế nào để tham gia vào các dự án nghiên cứu và phát triển trong lĩnh vực quốc phòng
+    - Có những chính sách nào về an ninh và quốc phòng không
+    - Tôi muốn biết về các chương trình hỗ trợ cho người tham gia nghĩa vụ quân sự
+    - Làm thế nào để đề xuất một dự án cộng đồng liên quan đến quốc phòng
+    - Có chính sách bảo vệ quyền lợi của gia đình lính không
+    - Tính năng quan trọng nào của chính sách an ninh quốc gia cần biết
+    - Làm thế nào để kiểm tra thông tin về các cuộc tập trận quân sự
+    - Có quy định nào về quản lý dữ liệu và bảo mật trong lĩnh vực quốc phòng không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ tư duy trong ngành quốc phòng
+    - Làm thế nào để tham gia vào các sự kiện và hội thảo về quốc phòng
+
+- intent: ask_tai_chinh
+  examples: |
+    - Làm thế nào để xây dựng một kế hoạch tài chính cá nhân
+    - Có những cách nào để đầu tư tiền dự trữ của tôi
+    - Tôi muốn biết về các lựa chọn về tài chính cá nhân, như vay mượn hay đầu tư
+    - Làm thế nào để đề xuất một dự án đầu tư cho doanh nghiệp của tôi
+    - Có chính sách bảo vệ người tiêu dùng trong các giao dịch tài chính không
+    - Tính năng quan trọng nào của chính sách ngân hàng và tài chính cần biết
+    - Làm thế nào để kiểm tra và quản lý tình hình tài chính của mình
+    - Có quy định nào về bảo mật thông tin cá nhân trong lĩnh vực tài chính không
+    - Tôi muốn biết về các chương trình đào tạo về quản lý tài chính cá nhân
+    - Làm thế nào để theo dõi xu hướng và thông tin thị trường tài chính
+
+- intent: ask_tai_nguyen
+  examples: |
+    - Làm thế nào để đăng ký để sử dụng tài nguyên tự nhiên
+    - Có những chính sách nào về bảo vệ tài nguyên thiên nhiên không
+    - Tôi muốn biết về các dự án bảo vệ và quản lý tài nguyên đang triển khai
+    - Làm thế nào để đề xuất một dự án bảo tồn tài nguyên cho cộng đồng
+    - Có chính sách nào về quản lý và phân phối tài nguyên nước không
+    - Tính năng quan trọng nào của chính sách bảo vệ môi trường và tài nguyên cần biết
+    - Làm thế nào để kiểm tra thông tin về trữ lượng và sử dụng tài nguyên đất đai
+    - Có quy định nào về bảo vệ tài nguyên biển và đại dương không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ về quản lý tài nguyên
+    - Làm thế nào để tham gia vào các chiến dịch bảo vệ tài nguyên thiên nhiên
+
+- intent: ask_thi_hanh_an
+  examples: |
+    - Làm thế nào để yêu cầu quyết định tòa án được thi hành
+    - Có những bước cụ thể nào khi bắt đầu quá trình thi hành án
+    - Tôi muốn biết về các quy định liên quan đến quá trình thi hành án dân sự
+    - Làm thế nào để đề xuất một đề nghị để tăng cường thi hành án
+    - Có chính sách nào về bảo vệ quyền lợi của bên thi hành án không
+    - Tính năng quan trọng nào của quy trình thi hành án cần biết
+    - Làm thế nào để kiểm tra tình trạng hiện tại của quá trình thi hành án của tôi
+    - Có quy định nào về chấp hành án hành chính không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ liên quan đến thi hành án
+    - Làm thế nào để khiếu nại về quá trình thi hành án
+
+- intent: ask_thong_ke
+  examples: |
+    - Làm thế nào để truy cập các số liệu thống kê về tình hình kinh tế quốc gia
+    - Có những nguồn thông tin nào về thống kê xã hội và dân số
+    - Tôi muốn biết về các chỉ số thống kê liên quan đến giáo dục và lao động
+    - Làm thế nào để đề xuất một nghiên cứu thống kê trong lĩnh vực của tôi
+    - Có chính sách nào về bảo mật và quản lý dữ liệu thống kê không
+    - Tính năng quan trọng nào của quá trình thu thập và xử lý thống kê cần biết
+    - Làm thế nào để tìm hiểu về xu hướng thống kê trong các lĩnh vực khác nhau
+    - Có quy định nào về tiêu chuẩn hóa trong công bố số liệu thống kê không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ về thống kê
+    - Làm thế nào để theo dõi và đánh giá chất lượng dữ liệu thống kê
+
+- intent: ask_thue
+  examples: |
+    - Làm thế nào để đăng ký và nộp thuế doanh nghiệp
+    - Có những chính sách giảm thuế nào cho doanh nghiệp mới
+    - Tôi muốn biết về các khoản khấu trừ và ưu đãi thuế cá nhân
+    - Làm thế nào để đề xuất một đề án hợp lý hóa thuế cho doanh nghiệp của tôi
+    - Có chính sách nào về bảo vệ quyền lợi của người đóng thuế không
+    - Tính năng quan trọng nào của quy định thuế cần biết
+    - Làm thế nào để kiểm tra tình trạng hiện tại của nghĩa vụ nộp thuế của tôi
+    - Có quy định nào về thuế nhập khẩu và xuất khẩu không
+    - Tôi muốn biết về các chương trình đào tạo về quản lý thuế
+    - Làm thế nào để khiếu nại hoặc giải quyết tranh chấp thuế
+
+- intent: ask_ton_giao
+  examples: |
+    - Làm thế nào để đăng ký tham gia các hoạt động tôn giáo trong cộng đồng
+    - Có những chính sách bảo vệ quyền tự do tôn giáo và tín ngưỡng không
+    - Tôi muốn biết về các lễ hội và nghi lễ tôn giáo đang diễn ra
+    - Làm thế nào để đề xuất một dự án hỗ trợ cho cộng đồng tôn giáo
+    - Có chính sách nào về bảo vệ quyền lợi của người theo đạo không
+    - Tính năng quan trọng nào của chính sách đa tôn giáo cần biết
+    - Làm thế nào để tìm hiểu về các tôn giáo và tín ngưỡng khác nhau trong khu vực của tôi
+    - Có quy định nào về xây dựng đền đài và nơi thờ tín ngưỡng không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ tôn giáo
+    - Làm thế nào để tham gia vào các hoạt động từ thiện của cộng đồng tôn giáo
+
+- intent: ask_trat_tu_an_toan_xa_hoi
+  examples: |
+    - Làm thế nào để báo cáo về các vấn đề liên quan đến trật tự an toàn xã hội
+    - Có những biện pháp nào được thực hiện để duy trì an ninh trong cộng đồng
+    - Tôi muốn biết về các chương trình hỗ trợ tăng cường trật tự an toàn xã hội
+    - Làm thế nào để đề xuất một dự án nhằm cải thiện trật tự an toàn xã hội
+    - Có chính sách nào về bảo vệ quyền lợi của người dân trong các trường hợp trật tự không
+    - Tính năng quan trọng nào của chính sách an ninh xã hội cần biết
+    - Làm thế nào để kiểm tra tình trạng hiện tại của trật tự an toàn xã hội
+    - Có quy định nào về quản lý và giám sát trật tự công cộng không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ liên quan đến trật tự an toàn xã hội
+    - Làm thế nào để tham gia vào các hoạt động cộng đồng nhằm duy trì trật tự và an toàn
+
+- intent: ask_vanHoa_theThao_duLich
+  examples: |
+    - Làm thế nào để tham gia vào các sự kiện văn hóa và nghệ thuật trong khu vực
+    - Có những địa điểm văn hóa nổi tiếng nào mà tôi nên thăm
+    - Tôi muốn biết về các hoạt động thể thao và sân vận động trong thành phố
+    - Làm thế nào để đề xuất một dự án nghệ thuật hoặc văn hóa cho cộng đồng
+    - Có chính sách hỗ trợ các hoạt động du lịch và văn hóa không
+    - Tính năng quan trọng nào của chính sách thể thao và văn hóa cần biết
+    - Làm thế nào để kiểm tra lịch trình các sự kiện văn hóa địa phương
+    - Có quy định nào về quản lý cơ sở hạ tầng du lịch không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ trong lĩnh vực văn hóa và thể thao
+    - Làm thế nào để tham gia vào các tour du lịch cộng đồng hoặc các hoạt động thể thao địa phương
+
+- intent: ask_xayDung_nhaO_doThi
+  examples: |
+    - Làm thế nào để đăng ký xin phép xây dựng cho dự án nhà ở
+    - Có những chính sách hỗ trợ xây dựng nhà ở cho người có thu nhập thấp không
+    - Tôi muốn biết về các dự án phát triển đô thị đang triển khai
+    - Làm thế nào để đề xuất một ý kiến về quy hoạch đô thị trong khu vực của tôi
+    - Có chính sách nào về an ninh và an toàn trong các dự án xây dựng không
+    - Tính năng quan trọng nào của chính sách xây dựng và đô thị cần biết
+    - Làm thế nào để kiểm tra thông tin về các dự án nhà ở đang triển khai
+    - Có quy định nào về bảo vệ môi trường trong xây dựng không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ xây dựng nhà ở
+    - Làm thế nào để tham gia vào quy hoạch đô thị và phát triển cộng đồng
+
+- intent: ask_y_te
+  examples: |
+    - Làm thế nào để đăng ký và sử dụng các dịch vụ y tế cơ bản
+    - Có những chính sách bảo hiểm y tế nào dành cho người dân
+    - Tôi muốn biết về các chương trình y tế cộng đồng đang triển khai
+    - Làm thế nào để đề xuất một dự án cải thiện dịch vụ y tế trong khu vực
+    - Có chính sách nào về quyền lợi và bảo vệ người bệnh không
+    - Tính năng quan trọng nào của chính sách y tế cần biết
+    - Làm thế nào để kiểm tra thông tin về các bệnh viện và cơ sở y tế địa phương
+    - Có quy định nào về thuốc và an toàn thực phẩm trong lĩnh vực y tế không
+    - Tôi muốn biết về các chương trình đào tạo và hỗ trợ trong lĩnh vực y tế
+    - Làm thế nào để tham gia vào các hoạt động tình nguyện trong lĩnh vực y tế

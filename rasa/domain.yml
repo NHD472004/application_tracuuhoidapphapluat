@@ -1,0 +1,101 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - ask_an_ninh_quoc_gia
+  - ask_bao_hiem
+  - ask_buu_chinh_vien_thong
+  - ask_bo_tro_tu_phap
+  - ask_canBo_congChuc_vienChuc
+  - ask_chinh_sach_xa_hoi
+  - ask_cong_nghiep
+  - ask_giaDinh_treEm_binhDangGioi
+  - ask_dan_su
+  - ask_dan_toc
+  - ask_dat_dai
+  - ask_doanhNghiep_hopTacXa
+  - ask_giaoDuc_daoTao
+  - ask_giao_thong_van_tai
+  - ask_hanh_chinh_tu_phap
+  - ask_hinh_su
+  - ask_ke_toan_kiem_toan
+  - ask_khieu_nai_to_cao
+  - ask_khoa_hoc_cong_nghe
+  - ask_lao_dong
+  - ask_moi_truong
+  - ask_ngan_hang_tien_te
+  - ask_ngoai_giao
+  - ask_nong_thon
+  - ask_quoc_phong
+  - ask_tai_chinh
+  - ask_tai_nguyen
+  - ask_thi_hanh_an
+  - ask_thong_ke
+  - ask_thue
+  - ask_ton_giao
+  - ask_trat_tu_an_toan_xa_hoi
+  - ask_vanHoa_theThao_duLich
+  - ask_xayDung_nhaO_doThi
+  - ask_y_te
+
+responses:
+  utter_greet:
+  - text: "Chào bạn"
+
+  utter_did_that_help:
+  - text: "Chào bạn, tôi có thể giúp được gì cho bạn"
+
+  utter_goodbye:
+  - text: "Bai bai"
+
+  utter_iamabot:
+  - text: "Tôi là trợ lý ảo. Tôi có thể hỗ trợ bạn những vấn đề về pháp luật"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - utter_greet
+  - utter_did_that_help
+  - utter_goodbye
+  - utter_iamabot
+  - act_an_ninh_quoc_gia
+  - act_bao_hiem
+  - act_buu_chinh_vien_thong
+  - act_bo_tro_tu_phap
+  - act_canBo_congChuc_vienChuc
+  - act_chinh_sach_xa_hoi
+  - act_cong_nghiep
+  - act_giaDinh_treEm_binhDangGioi
+  - act_dan_su
+  - act_dan_toc
+  - act_dat_dai
+  - act_doanhNghiep_hopTacXa
+  - act_giaoDuc_daoTao
+  - act_giao_thong_van_tai
+  - act_hanh_chinh_tu_phap
+  - act_hinh_su
+  - act_ke_toan_kiem_toan
+  - act_khieu_nai_to_cao
+  - act_khoa_hoc_cong_nghe
+  - act_lao_dong
+  - act_moi_truong
+  - act_ngan_hang_tien_te
+  - act_ngoai_giao
+  - act_nong_thon
+  - act_quoc_phong
+  - act_tai_chinh
+  - act_tai_nguyen
+  - act_thi_hanh_an
+  - act_thong_ke
+  - act_thue
+  - act_ton_giao
+  - act_trat_tu_an_toan_xa_hoi
+  - act_vanHoa_theThao_duLich
+  - act_xayDung_nhaO_doThi
+  - act_y_te
