@@ -11,7 +11,7 @@
   
 ### Chi tiết ý tưởng
  <ul>
- <li>Sử dụng các phần mềm Python, Rasa, MongoDB để build môi trường phát triển.</li>
+ <li>Sử dụng các công nghệ: Python, Rasa, MongoDB để build môi trường phát triển.</li>
  <li>Thiết lập một số thông tin: Chủ đề, chỉ mục.</li>
  <li>Hỗ trợ tra cứu, xem các nội dung văn bản QPPL đang có hiệu lực theo trật tự sắp xếp về chủ đề, đề mục, chỉ mục và các điều giống như Bộ Pháp điển Việt Nam. Cho phép người dùng thực hiện phản hồi lại thông tin về mức độ chính xác của các gợi ý sắp xếp để phần mềm có thể ghi nhớ và đưa ra các cải tiến về sắp xếp phù hợp hơn cho các lần tiếp theo.</li>
  <li>Phần mềm tự động trích rút các thuật ngữ, từ ngữ được định nghĩa và sử dụng trong các văn bản QPPL.</li>
