@@ -32,6 +32,7 @@ class bao_hiem(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
+        # kết nối với chỉ mục
         collection = connect_to_mongodb()
         chi_muc_db = collection["chi_muc_bao_hiem"]
 
