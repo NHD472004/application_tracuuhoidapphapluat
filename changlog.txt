@@ -3,3 +3,7 @@ Change Log: Ứng dụng hỗ trợ tra cứu, hỏi đáp tri thức pháp lu�
 - Thêm chức năng hỗ trợ tra cứu, xem các nội dung văn bản QPPL đang có hiệu lực
 - Tối ưu hóa phân mềm
 - Sửa một vài lỗi
+Ứng dụng hỗ trợ tra cứu, hỏi đáp tri thức pháp luật:v1.0.01
+- Đưa code lên giao diện người dùng
+- Tối ưu hóa phân mềm
+- Sửa một vài lỗi
