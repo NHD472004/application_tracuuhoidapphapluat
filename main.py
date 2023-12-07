@@ -17,7 +17,10 @@ def hello():
         headers = {"content-type": "application/json"}
         r = requests.post(url, json=payload, headers=headers)
         print(r.json())
-        return render_template("index.html", bot_chat=r.json()[0]["text"])
+        if len(r.json()) == 0:
+            return render_template("index.html", bot_chat="Tôi không hiểu ý bạn")
+        else: 
+            return render_template("index.html", bot_chat=r.json()[0]["text"])
     else:
         return render_template("index.html")
         
